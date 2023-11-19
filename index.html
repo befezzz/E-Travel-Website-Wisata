@@ -1,11 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda Website Wisata | Pulau Nusa Penida</title>
+    <title>Raja Ampat | Beranda Mari Eksplor Keindahan Alam</title>
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon" sizes="100x16" style="color: #fff;">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg py-3 fixed-top navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand text-light fw-bold" href="#"><img src="img/logo.png" alt="" width="150" height="40"></a>
+            <button class="navbar-toggler border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light" id="toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" href="#">Fasilitas</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" href="#">Paket Tour</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light me-3" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light me-3" href="#">Kontak</a>
+                    </li>
+                    <li class="nav-item" id="nav-btn">
+                        <a class="btn rounded-pill px-4 fw-bold border-2 text-light" href="#"
+                            data-bs-toggle="modal" data-bs-target="#registerModal">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="registerModal" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content w-100">
+                <div class="modal-header ">
+                    <h5 id="registerLabel">Daftar</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating py-2 px-3 mt-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="fname" placeholder="Nama Depan">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="fname" placeholder="Nama Belakang">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-floating py-2 px-3">
+                            <input type="text" class="form-control" id="Username" placeholder="Username">
+                            <label for="Username" class="px-4">Username</label>
+                        </div>
+                        <br>
+                        <div class="form-floating py-2 px-3">
+                            <input type="Password" class="form-control" id="Password" placeholder="Password">
+                            <label for="Password" class="px-4">Password</label>
+                        </div>
+                        <br>
+                        <div class="form-floating py-2 px-3">
+                            <input type="Password" class="form-control" id="Password" placeholder="Konfirmasi Password">
+                            <label for="Password" class="px-4">Konfirmasi Password</label>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button class="btn btn-dark ml-4 mb-3 fw-bold" id="btn">Daftar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="section" class="video">
+        <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+            <source src="video/video.mp4" type="video/mp4" class="video-fluid">
+        </video>
+        <div class="container-fluid">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption" id="carousel-caption">
+                            <h5 class="animated fadeInDown display-3" style="animation-delay: 1s;">Kerja, Kerja, Kerja, Tipes
+                            </h5>
+                            <p class="animated fadeInDown" style="animation-delay: 2s;">Sebelum tipes lebih baik healing bro</p>
+                            <p class="animated fadeInDown" style="animation-delay: 3s;"><a href="#" id="btn-content">Explore</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption" id="carousel-caption">
+                            <h5 class="animated fadeInDown" style="animation-delay: 1s;">Ga Butuh Duit, Cuma Butuh Healing</h5>
+                            <p class="animated fadeInDown" style="animation-delay: 2s;">Tapi boong, ya masa healing ga butuh duit</p>
+                            <p class="animated fadeInDown" style="animation-delay: 3s;"><a href="#" id="btn-content">Explore</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption" id="carousel-caption">
+                            <h5 class="animated fadeInDown" style="animation-delay: 1s;">Senin Sampai Jum'at Full Turu, Weekend Healing</h5>
+                            <p class="animated fadeInDown" style="animation-delay: 2s;">Yang sibuk ga diajak, yang nganggur aja</p>
+                            <p class="animated fadeInDown" style="animation-delay: 3s;"><a href="#" id="btn-content">Explore</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <h6 class="about-title text-start mt-5">Tentang Kami</h6>
+                        <h2 class="heading-about text-start">Official Website Wisata Raja Ampat</h2>
+                        <p class="p-about">Kepulauan Raja Ampat adalah kepulauan Indonesia di ujung barat laut
+                            Semenanjung Kepala Burung di Papua Barat. Terdiri dari ratusan pulau yang tertutup hutan,
+                            Raja Ampat terkenal dengan pantai dan terumbu karangnya yang kaya akan biota laut.</p>
+                        <a href="#" class="btn-content-about">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-container">
+                        <div class="row p-1">
+                            <div class="col-lg-6 col-6">
+                                <div class="img-wisata-container">
+                                    <div class="img-wisata1"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="img-wisata-container">
+                                    <div class="img-wisata2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col-lg-6 col-6">
+                                <div class="img-wisata-container">
+                                    <div class="img-wisata3"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="img-wisata-container">
+                                    <div class="img-wisata4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="service-container">
+                        <div class="service-content">
+                            <p class="icon-service"><i class='bx bxs-hotel'></i></p>
+                            <h4 class="heading-service">Penginapan</h4>
+                        </div>
+                        <div class="service-content">
+                            <p class="icon-service"><i class='bx bxs-car'></i></p>
+                            <h4 class="heading-service">Transportasi</h4>
+                        </div>
+                        <div class="service-content">
+                            <p class="icon-service"><i class='bx bx-restaurant'></i></p>
+                            <h4 class="heading-service">Rumah Makan</h4>
+                        </div>
+                        <div class="service-content">
+                            <p class="icon-service"><i class='bx bxs-user-rectangle'></i></p>
+                            <h4 class="heading-service">Pemandu Wisata</h4>
+                        </div>
+                        <div class="service-content">
+                            <p class="icon-service"><i class='bx bx-dumbbell'></i></p>
+                            <h4 class="heading-service">Area Gym</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container mt-5">
+            <div class="text-center" id="title">
+                <h2 class="display-6 fw-bold">Galeri</h2>
+                <h5 class="fw-light text-muted">Nikmati keindahan alam</h5>
+            </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner mb-5">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-3 mt-5">
+                            <div class="col mb-3">
+                                <div class="card rounded-3">
+                                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card rounded-3">
+                                    <img src="img/img10.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card rounded-3">
+                                    <img src="img/img11.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card rounded-3">
+                                    <img src="img/img12.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card rounded-3">
+                                    <img src="img/img13.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card rounded-3">
+                                    <img src="img/img14.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 mt-5">
+                            <div class="col mb-3">
+                                <div class="card">
+                                    <img src="img/img15.jpg" class="card-img-top rounded" alt="..." width="100"
+                                        height="236">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card">
+                                    <img src="img/img16.jpg" class="card-img-top rounded" alt="..." width="100"
+                                        height="236">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card">
+                                    <img src="img/img17.jpg" class="card-img-top rounded" alt="..." width="100"
+                                        height="236">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card">
+                                    <img src="img/img18.jpg" class="card-img-top rounded" alt="..." width="100"
+                                        height="236">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card">
+                                    <img src="img/img19.jpg" class="card-img-top rounded" alt="..." width="100"
+                                        height="236">
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card">
+                                    <img src="img/img2.jpg" class="card-img-top rounded" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-header text-center" id="title">
+                <h2 class="display-6 fw-bold">Review</h2>
+                <h5 class="fw-light text-muted">Nikmati keindahan alam</h5>
+            </div>
+            <div class="testimonials-content">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="img/profile1.jpg" alt="" width="200" height="200">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <div class="bio">
+                                                <h3 class="fw-bold">Rico Ricard</h3>
+                                                <h6 class="text-muted">Pengunjung</h6>
+                                            </div>
+                                            <p><span><i class='bx bxs-quote-alt-left'></i></span> Lorem ipsum dolor, sit
+                                                amet consectetur adipisicing elit. Harum libero quo totam ipsum
+                                                obcaecati facere maxime reprehenderit sint voluptate velit ducimus
+                                                nostrum quae!
+                                                <span><i class='bx bxs-quote-alt-right'></i></span>
+                                            </p>
+                                            <p class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="img/profile2.jpg" alt="" width="200" height="200">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <div class="bio">
+                                                <h3 class="fw-bold">Victor Saputra</h3>
+                                                <h6 class="text-muted">Pengunjung</h6>
+                                            </div>
+                                            <p><span><i class='bx bxs-quote-alt-left'></i></span> Lorem ipsum dolor, sit
+                                                amet consectetur adipisicing elit. Harum libero quo totam ipsum
+                                                obcaecati facere maxime reprehenderit sint voluptate velit ducimus
+                                                nostrum quae!
+                                                <span><i class='bx bxs-quote-alt-right'></i></span>
+                                            </p>
+                                            <p class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star-half'></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="img/img1.jpg" alt="" width="200" height="200">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <div class="bio">
+                                                <h3 class="fw-bold">John Smith</h3>
+                                                <h6 class="text-muted">Pengunjung</h6>
+                                            </div>
+                                            <p><span><i class='bx bxs-quote-alt-left'></i></span> Lorem ipsum dolor, sit
+                                                amet consectetur adipisicing elit. Harum libero quo totam ipsum
+                                                obcaecati facere maxime reprehenderit sint voluptate velit ducimus
+                                                nostrum quae!
+                                                <span><i class='bx bxs-quote-alt-right'></i></span>
+                                            </p>
+                                            <p class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="packet">
+        <div class="container">
+            <div class="text-center mb-5" id="title">
+                <h2 class="display-6 fw-bold">Paket Tour</h2>
+                <h5 class="fw-light text-muted">Nikmati keindahan alam</h5>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 mb-3 mt-md-0">
+                    <div class="card" style="border-radius: 12px;">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark mt-3" id="btn1">Paket 01</a>
+                            <br>
+                            <h1 class="card-title mt-5 mb-3 fw-bold">Rp. 500.000/hari</h1>
+                            <ul>
+                                <li>Penginapan di hotel bintang 4</li>
+                                <li>Free Sarapan</li>
+                                <li>Gym</li>
+                                <li>2 Tempat Wisata</li>
+                                <li>Tiket Masuk</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary mb-3" id="button1">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mt-md-0">
+                    <div class="card" style="border-radius: 12px;">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark mt-3" id="btn2">Paket 02</a>
+                            <br>
+                            <h1 class="card-title mt-5 mb-3 fw-bold">Rp. 750.000/hari</h1>
+                            <ul>
+                                <li>Penginapan di hotel bintang 4</li>
+                                <li>Makan 3x sehari</li>
+                                <li>Area Gym</li>
+                                <li>3 Tempat Wisata</li>
+                                <li>Tiket Masuk</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary mb-3" id="button2">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mt-md-0">
+                    <div class="card" style="border-radius: 12px;">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark mt-3" id="btn3">Paket 03</a>
+                            <br>
+                            <h1 class="card-title mt-5 mb-3 fw-bold">Rp. 1.000.000/hari</h1>
+                            <ul>
+                                <li>Penginapan di hotel bintang 5</li>
+                                <li>Makan 3x sehari</li>
+                                <li>Area Gym</li>
+                                <li>3 Tempat Wisata include tiket</li>
+                                <li>1 Pemandu Wisata</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary mb-3" id="button3">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location py-5 mt-5">
+        <div class="container">
+            <div class="text-center" id="title">
+                <h2 class="display-6 fw-bold">Kunjungi Kami di</h2>
+                <h5 class="fw-light text-muted mt-3">Nikmati keindahan alam</h5>
+            </div>
+            <div class="card mt-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.2818837239!2d130.4960672645911!3d-0.23333298491937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5fa27c8c822585%3A0x32d4a5a9909469f5!2sRaja%20Ampat%20Islands!5e0!3m2!1sen!2sid!4v1700410503699!5m2!1sen!2sid"
+                    width="" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-muted pt-5 pb-4" id="footer">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-muted"><img src="img/logo.png" alt="" width="150" height="50"></h5>
+                    <p>Lupakan sejenak bebanmu, ayo healing dan nikmati keindahan alam yang sudah tersedia.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-muted">Fasilitas</h5>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Penginapan</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Transportasi</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Restaurant</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Area Gym</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Pemandu Wisata</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-muted">FAQ</h5>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Apa saja syarat-syarat memesan?</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Bolehkah warga negara asing ikut
+                            memesan?</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-muted">Bagaimana tahapan memesan?</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-muted">Sosial Media</h5>
+                    <ul class="list-unstyled d-flex" id="ul">
+                        <li><a href="https://instagram.com/zzzzeeeaaaaa_?igshid=OGQ5ZDc2ODk2ZA==" class="btn me-3"><i
+                                    class='bx bxl-instagram-alt fs-4'></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nur-rohmah-zahroh-694687250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                class="btn me-3"><i class='bx bxl-linkedin fs-4'></i></a></li>
+                        <li><a href="https://dribbble.com/nurrohmahzahroh" class="btn "><i
+                                    class='bx bxl-dribbble fs-4'></i></a></li>
+                    </ul>
+                </div>
+
+                <br class="mb-4">
+                <div class="col-md-6 mt-3">
+                    <div class="col-md-7 col-lg-12">
+                        <p>Copyright &copy; 2023 All rights reserved by:
+                            <a href="#" class="text-decoration-none"><strong class="text-muted">Official Raja Ampat</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="button">
+        <a href="https://api.whatsapp.com/send?phone=6285225450797&text=Hi,Saya%20ingin%20memesan%20paket%20travel%20Raja%20Ampat"
+            class="me-5"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#" id=""><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>
